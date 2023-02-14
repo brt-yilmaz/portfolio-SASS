@@ -1,12 +1,12 @@
 
 
 .nav {
-  
   display: flex;
   height: 10vh;
 
   &__container {
     display: flex;
+    justify-content: space-between;
   }
 
   &__logo img{
@@ -14,8 +14,20 @@
   }
 
   &__items {
-    display: flex;
+    display: none;
     list-style: none;
   }
+
+  &__hamburger-menu::before {
+      content: "\f0c9";
+      font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0c9";
+      font-size: 2rem;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+  }
+  
 }
 
