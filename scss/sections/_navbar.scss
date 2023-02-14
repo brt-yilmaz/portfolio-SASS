@@ -1,0 +1,21 @@
+
+
+.nav {
+  
+  display: flex;
+  height: 10vh;
+
+  &__container {
+    display: flex;
+  }
+
+  &__logo img{
+    height: 100%;   
+  }
+
+  &__items {
+    display: flex;
+    list-style: none;
+  }
+}
+
