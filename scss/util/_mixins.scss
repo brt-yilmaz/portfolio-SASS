@@ -1,2 +1,6 @@
 @use './functions' as * ;
+@use '../globals/' as g;
 
+@mixin gradient {
+  background: linear-gradient(to right, rgba(g.$primary, 0.95), rgba(g.$secondary, 0.95));
+}

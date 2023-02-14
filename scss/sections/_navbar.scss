@@ -1,11 +1,18 @@
-
+@use '../globals/' as g;
+@use '../util/' as u;
 
 .nav {
   display: flex;
-  height: 10vh;
-
+  height: 8vh;
+  @include u.gradient;
+  color: white;
+  align-items: center;
+  
   &__container {
-    display: flex;
+    width: 80%;
+    height: 6vh;   
+    margin: 0 auto;
+    display: grid;
     justify-content: space-between;
   }
 
