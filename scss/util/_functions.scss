@@ -19,5 +19,8 @@
 
 @function adjust($min, $opt, $viewheight, $max) {
   $viewwidht: $viewheight + vw;
+  $opt: $opt + px;
   @return clamp(rem($min), $opt + $viewwidht, rem($max));
 }
+
+

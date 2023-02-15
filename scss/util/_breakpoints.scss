@@ -1,0 +1,27 @@
+@use 'functions' as * ; 
+
+$breakpoints-up: (
+'medium': em(700),
+'large' : em(900),
+'xlarge': em(1440),
+);
+
+//must be different to prevent overlap
+$breakpoints-down: (
+  'small'  : em(699.98),
+  'medium' : em(899.98),
+  'large'  : em(1349.98),
+);
+
+@mixin breakpoint($size) {
+  @media (min-width: map-get($breakpoints-up, $size )){
+    @content;
+  }
+};
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)){
+    @content;
+  }
+};
+

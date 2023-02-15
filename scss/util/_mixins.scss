@@ -1,6 +1,18 @@
 @use './functions' as * ;
-@use '../globals/' as g;
+@use './variables' as * ;
 
 @mixin gradient {
-  background: linear-gradient(to right, rgba(g.$primary, 0.95), rgba(g.$secondary, 0.95));
+  background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+}
+
+
+@mixin before-after($unicode) {
+    content: $unicode;
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: $unicode;
+    font-size: clamp(1rem, .5rem + 3vh , 2.5rem);
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
 }
