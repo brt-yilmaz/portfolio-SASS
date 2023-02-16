@@ -134,6 +134,75 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.intro {
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  height: 93%;
+  color: white;
+  padding: 4rem 0 0 0;
+}
+.intro__grid {
+  width: 80%;
+  margin: auto;
+  display: grid;
+}
+@media (min-width: 48em) {
+  .intro__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+.intro__greeting {
+  font-size: 3rem;
+  display: block;
+  font-weight: 500;
+}
+@media (min-width: 48em) {
+  .intro__greeting {
+    grid-column: 1/-1;
+  }
+}
+.intro__description {
+  font-size: 1.3rem;
+}
+@media (min-width: 48em) {
+  .intro__description {
+    grid-column: 1/2;
+  }
+}
+.intro__video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 48em) {
+  .intro__video {
+    grid-column: 2/-1;
+  }
+}
+.intro__video img {
+  width: 65%;
+}
+.intro .fa-play-circle:before {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: #d122e3;
+}
+.intro button.intro__contact {
+  height: 4rem;
+  width: 15rem;
+  display: revert;
+  background-color: white;
+  padding: 1rem;
+}
+
 .nav__hamburger-menu {
   font-size: clamp(2rem, 2rem + 0.7vw, 3rem);
 }
@@ -151,7 +220,7 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   border: 0.1rem solid rgba(255, 255, 255, 0.6);
   background-color: white;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 .btn-rounded span {
   position: absolute;
@@ -175,9 +244,9 @@ p, h1, h2, h3, h4, h5, h6 {
 .btn-rounded:hover span {
   background-color: rgba(0, 0, 0, 0.6);
 }
-@media (min-width: 48em) {
+@media (min-width: 48em) and (max-width: 63.99875em) {
   .btn-rounded {
-    display: initial;
+    display: block;
     padding: 0;
     background-color: #BE2FE9;
   }
@@ -186,6 +255,11 @@ p, h1, h2, h3, h4, h5, h6 {
   }
   .btn-rounded .phone-number {
     display: none;
+  }
+}
+@media (min-width: 64em) {
+  .btn-rounded {
+    display: revert;
   }
 }
 

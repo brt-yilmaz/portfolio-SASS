@@ -6,15 +6,15 @@
 
 $breakpoints-up: (
 'medium': em(768),
-'large' : em(900),
+'large' : em(1024),
 'xlarge': em(1440),
 );
 
 //must be different to prevent overlap
 $breakpoints-down: (
-  'small'  : em(699.98),
-  'medium' : em(899.98),
-  'large'  : em(1349.98),
+  'medium'  : em(767.98),
+  'large' : em(1023.98),
+  'xlarge'  : em(1439.98),
 );
 
 @mixin breakpoint($size) {
@@ -24,9 +24,21 @@ $breakpoints-down: (
 };
 
 @mixin breakpoint-down($size) {
-  @media (max-width: map-get($breakpoints-down, $size)){
+  @media (max-width: map-get($breakpoints-up, $size)){
     @content;
   }
+};
+
+@mixin break-between($sizemin, $sizemax) {
+  @media 
+  (min-width: map-get($breakpoints-up, $sizemin)) 
+  and 
+  (max-width: map-get($breakpoints-down, $sizemax)) 
+  {
+    @content;
+  } 
+
+
 };
 
 /************Media Query End************/

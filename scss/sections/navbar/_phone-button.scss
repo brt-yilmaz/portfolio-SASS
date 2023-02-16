@@ -8,7 +8,7 @@
   margin: 0;
   border: 0.1rem solid rgba(white, 0.6);
   background-color: white;
-  border-radius: 20px;
+  border-radius: 25px;
 
   span {
       position: absolute;
@@ -37,9 +37,8 @@
       }
   }
   
-  @include breakpoint(medium){
-    
-    display: initial;
+  @include break-between(medium , large) {
+    display: block;
     padding: 0;
     background-color: #BE2FE9;
 
@@ -49,8 +48,14 @@
 
     .phone-number {
       display: none;
+      //add an hover to see number, without last li
     }
-
   }
+
+  @include breakpoint(large) {
+    display: revert;
+  }
+
+  
 }
 
