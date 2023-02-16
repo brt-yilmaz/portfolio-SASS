@@ -1,18 +1,38 @@
 @use './functions' as * ;
 @use './variables' as * ;
 
+
+/************Media Query Start************/
+
+$breakpoints-up: (
+'medium': em(700),
+'large' : em(900),
+'xlarge': em(1440),
+);
+
+//must be different to prevent overlap
+$breakpoints-down: (
+  'small'  : em(699.98),
+  'medium' : em(899.98),
+  'large'  : em(1349.98),
+);
+
+@mixin breakpoint($size) {
+  @media (min-width: map-get($breakpoints-up, $size )){
+    @content;
+  }
+};
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)){
+    @content;
+  }
+};
+
+/************Media Query End************/
+
+
+
 @mixin gradient {
   background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
-}
-
-
-@mixin before-after($unicode) {
-    content: $unicode;
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: $unicode;
-    font-size: clamp(1rem, .5rem + 3vh , 2.5rem);
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
 }

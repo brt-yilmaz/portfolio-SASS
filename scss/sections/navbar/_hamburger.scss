@@ -1,0 +1,9 @@
+@use '../../util/mixins' as *;
+
+.nav__hamburger-menu {
+  @include breakpoint(medium){
+    display: none;
+  }
+  
+}
+
