@@ -5,7 +5,7 @@
 /************Media Query Start************/
 
 $breakpoints-up: (
-'medium': em(700),
+'medium': em(768),
 'large' : em(900),
 'xlarge': em(1440),
 );
@@ -35,4 +35,16 @@ $breakpoints-down: (
 
 @mixin gradient {
   background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+}
+
+@mixin fontAwesome($content){
+  content: $content;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  @content;
 }

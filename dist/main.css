@@ -134,27 +134,80 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-@media (min-width: 43.75em) {
+.nav__hamburger-menu {
+  font-size: clamp(2rem, 2rem + 0.7vw, 3rem);
+}
+@media (min-width: 48em) {
   .nav__hamburger-menu {
+    display: none;
+  }
+}
+
+.btn-rounded {
+  display: none;
+  position: relative;
+  padding: 0.7rem 3.5rem 0.8375rem 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  border: 0.1rem solid rgba(255, 255, 255, 0.6);
+  background-color: white;
+  border-radius: 20px;
+}
+.btn-rounded span {
+  position: absolute;
+  background-color: #9926f0;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.btn-rounded span i {
+  color: white;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+.btn-rounded:hover {
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  color: white;
+}
+.btn-rounded:hover span {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+@media (min-width: 48em) {
+  .btn-rounded {
+    display: initial;
+    padding: 0;
+    background-color: #BE2FE9;
+  }
+  .btn-rounded .phone-icon {
+    right: -2rem;
+  }
+  .btn-rounded .phone-number {
     display: none;
   }
 }
 
 .nav {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  height: clamp(4rem, 9vh, 6rem);
+  height: clamp(5rem, 10vh, 6rem);
   color: white;
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
 }
+.nav__logo {
+  font-size: clamp(1.8rem, 1.8rem + 0.7vw, 2.5rem);
+}
 .nav__container {
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  height: 6vh;
+  height: 100%;
 }
+
 .nav__items {
   display: none;
   list-style: none;
@@ -162,22 +215,15 @@ p, h1, h2, h3, h4, h5, h6 {
 .nav__items a {
   text-decoration: none;
   color: white;
+  padding: 0 0.7rem;
+  text-transform: capitalize;
+  font-weight: 600;
 }
-@media (min-width: 43.75em) {
+@media (min-width: 48em) {
   .nav__items {
     height: 100%;
     display: flex;
-    gap: 1rem;
+    gap: clamp(0.625rem, 10%, 0.9375rem);
     align-items: center;
   }
-}
-
-.btn-phone {
-  padding: 0.5rem 4rem 0.5rem 2rem;
-  position: relative;
-  display: none;
-  border: 0.1rem solid rgba(255, 255, 255, 0.6);
-  background-color: white;
-  border-radius: 20px;
-  height: 170%;
 }/*# sourceMappingURL=main.css.map */

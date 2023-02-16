@@ -1,10 +1,56 @@
-.btn-phone {
-  padding: 0.5rem 4rem 0.5rem 2rem;
-  position: relative;
+@use '../../util/' as *;
+
+.btn-rounded {
   display: none;
+  position: relative;
+  padding: 0.7rem 3.5rem 0.8375rem 1.25rem;
+  font-weight: 700;
+  margin: 0;
   border: 0.1rem solid rgba(white, 0.6);
   background-color: white;
   border-radius: 20px;
-  height: 170%;
 
+  span {
+      position: absolute;
+      background-color: $primary;
+      width: 2.5rem;
+      height: 2.5rem;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      border-radius: 50%;
+
+      i {
+          color: white;
+          font-size: 1rem;
+          line-height: 2.5rem;
+      }
+
+  }
+
+  &:hover {
+      @include gradient;
+      color: white;
+
+      span {
+          background-color: rgba(black, 0.6);
+      }
+  }
+  
+  @include breakpoint(medium){
+    
+    display: initial;
+    padding: 0;
+    background-color: #BE2FE9;
+
+    .phone-icon {
+      right: -2rem;
+    }
+
+    .phone-number {
+      display: none;
+    }
+
+  }
 }
+

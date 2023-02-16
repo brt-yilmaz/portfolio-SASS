@@ -1,6 +1,9 @@
 @use '../../util/mixins' as *;
 
 .nav__hamburger-menu {
+
+  font-size: clamp(2rem, 2rem + .7vw, 3rem);
+
   @include breakpoint(medium){
     display: none;
   }
