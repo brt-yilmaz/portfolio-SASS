@@ -1,0 +1,33 @@
+@use '../../util/' as * ;
+
+.intro__video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  @include breakpoint(medium) {
+    grid-column: 2/-1;
+  }
+
+  & img {
+    width: 80%;
+
+    @include breakpoint(medium) {
+      width: 90%;
+    }
+
+    @include breakpoint(large) {
+      width: 70%;
+    }
+
+  }
+}
+
+.fa-play-circle:before {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: $secondary;
+}

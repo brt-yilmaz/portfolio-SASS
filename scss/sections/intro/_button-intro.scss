@@ -1,0 +1,27 @@
+@use '../../util/' as * ;
+
+  .intro button.intro__contact {
+    justify-self: center;
+    height: 3rem;
+    width: 12rem;
+    display: revert;
+    background-color: white;
+    padding: 1rem;
+    text-align: left;
+    align-self: flex-end;
+    line-height: 1rem;
+
+    @include breakpoint(medium){
+      align-self:flex-start;
+    }
+
+    @include breakpoint(large){
+      justify-self: flex-start
+    }
+
+    & span {
+      text-align: center;
+    }
+  }
+  
+ 

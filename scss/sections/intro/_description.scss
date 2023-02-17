@@ -1,0 +1,9 @@
+@use '../../util/' as * ;
+
+.intro__description {
+  font-size: 1.3rem;
+
+  @include breakpoint(medium) {
+    grid-column: 1/2;
+  }
+}
