@@ -11,6 +11,8 @@
     align-self: flex-end;
     line-height: 1rem;
 
+    
+
     @include breakpoint(medium){
       align-self:flex-start;
     }
@@ -24,4 +26,11 @@
     }
   }
   
- 
+  .intro button.intro__contact:hover {
+    @include gradient;
+    color: white;
+
+    span {
+        background-color: rgba(black, 0.6);
+    }
+  }

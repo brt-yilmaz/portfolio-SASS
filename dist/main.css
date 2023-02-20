@@ -262,6 +262,14 @@ html {
   text-align: center;
 }
 
+.intro button.intro__contact:hover {
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  color: white;
+}
+.intro button.intro__contact:hover span {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 .intro__description {
   font-size: 1.3rem;
 }
