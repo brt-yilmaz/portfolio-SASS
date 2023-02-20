@@ -1,0 +1,48 @@
+@use '../../util/' as *;
+
+.skills__grid__header {
+  display: grid;
+  justify-items: center;
+
+  &__headline h3 {
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: clamp(1.7rem, 1rem + 1.5vw, 5rem);
+    margin-bottom: 1vh;
+  }
+
+  &__headline div::before {
+    content: "";
+    width: clamp(12rem, 5rem + 15vw, 40rem);
+    height: clamp(.1rem, .2vh, .5rem);
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+}
+    &__headline div::after {
+    content: "";
+    width: 2rem;
+    padding-top: 0.5rem;
+    height: 0.2rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-color: $primary;
+}
+
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    & > * {
+      font-size: 2rem;
+    }
+
+    & > *:hover {
+      scale: 1.5;
+    }
+  }
+}

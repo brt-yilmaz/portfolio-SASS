@@ -150,7 +150,7 @@ html {
 .btn-rounded {
   display: none;
   position: relative;
-  padding: 0.7rem 3.5rem 0.8375rem 1.25rem;
+  padding: 0.7rem 3.5rem 0.8rem 1.25rem;
   font-weight: 700;
   margin: 0;
   border: 0.1rem solid rgba(255, 255, 255, 0.6);
@@ -237,7 +237,7 @@ html {
   }
 }
 
-.intro button.intro__contact {
+.intro button.intro__contact, .services__design button.intro__contact {
   justify-self: center;
   height: 3rem;
   width: 12rem;
@@ -249,16 +249,16 @@ html {
   line-height: 1rem;
 }
 @media (min-width: 48em) {
-  .intro button.intro__contact {
+  .intro button.intro__contact, .services__design button.intro__contact {
     align-self: flex-start;
   }
 }
 @media (min-width: 64em) {
-  .intro button.intro__contact {
+  .intro button.intro__contact, .services__design button.intro__contact {
     justify-self: flex-start;
   }
 }
-.intro button.intro__contact span {
+.intro button.intro__contact span, .services__design button.intro__contact span {
   text-align: center;
 }
 
@@ -366,4 +366,54 @@ html {
   transform: translate(-50%, -50%);
   font-size: 5rem;
   color: #d122e3;
+}
+
+.skills__grid__header {
+  display: grid;
+  justify-items: center;
+}
+.skills__grid__header__headline h3 {
+  text-align: center;
+  letter-spacing: 4px;
+  font-weight: 400;
+  font-size: clamp(1.7rem, 1rem + 1.5vw, 5rem);
+  margin-bottom: 1vh;
+}
+.skills__grid__header__headline div::before {
+  content: "";
+  width: clamp(12rem, 5rem + 15vw, 40rem);
+  height: clamp(0.1rem, 0.2vh, 0.5rem);
+  display: block;
+  margin: 0 auto;
+  background-color: #9926f0;
+}
+.skills__grid__header__headline div::after {
+  content: "";
+  width: 2rem;
+  padding-top: 0.5rem;
+  height: 0.2rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: #9926f0;
+}
+.skills__grid__header__logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.skills__grid__header__logos > * {
+  font-size: 2rem;
+}
+.skills__grid__header__logos > *:hover {
+  scale: 1.5;
+}
+
+.skills__grid {
+  padding-top: 4vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 80%;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

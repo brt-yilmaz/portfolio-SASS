@@ -1,6 +1,6 @@
 @use '../../util/' as * ;
 
-  .intro button.intro__contact {
+  .intro button.intro__contact, .services__design button.intro__contact {
     justify-self: center;
     height: 3rem;
     width: 12rem;
