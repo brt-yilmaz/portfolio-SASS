@@ -371,6 +371,7 @@ html {
 .skills__grid__header {
   display: grid;
   justify-items: center;
+  gap: 1rem;
 }
 .skills__grid__header__headline h3 {
   text-align: center;
@@ -406,6 +407,24 @@ html {
 .skills__grid__header__logos > * {
   font-size: 2rem;
 }
+.skills__grid__header__logos .html {
+  color: rgb(67, 62, 62);
+}
+.skills__grid__header__logos .sass {
+  color: #9926f0;
+}
+.skills__grid__header__logos .js {
+  color: #0c2f48;
+}
+.skills__grid__header__logos .react {
+  color: #0f6db1;
+}
+.skills__grid__header__logos .node {
+  color: rgb(1, 73, 1);
+}
+.skills__grid__header__logos .mongo {
+  color: #1a8c48;
+}
 .skills__grid__header__logos > *:hover {
   scale: 1.5;
 }
@@ -413,7 +432,108 @@ html {
 .skills__grid {
   padding-top: 4vh;
   display: grid;
+  gap: 2rem;
   grid-template-columns: 1fr;
   width: 80%;
   margin: 0 auto;
+  text-align: justify;
+}
+.skills__grid span, .skills__grid h2 {
+  background-clip: text;
+  background-image: linear-gradient(to right, #9926f0, #4a364c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.skills__grid span {
+  font-size: 2rem;
+}
+
+.skills__grid__my-services {
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 48em) {
+  .skills__grid__my-services {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.skills__grid__my-services__heading {
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+@media (min-width: 48em) {
+  .skills__grid__my-services__heading {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+}
+.skills__grid__my-services--left {
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+@media (min-width: 48em) {
+  .skills__grid__my-services--left {
+    border-right: 0.1rem solid lightgrey;
+    text-align: center;
+    padding: 0 2.2rem;
+    align-self: center;
+  }
+}
+
+.services__design,
+.services__web-dev,
+.services__cloud {
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 48em) {
+  .services__design,
+  .services__web-dev,
+  .services__cloud {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+.services__design__description,
+.services__web-dev__description,
+.services__cloud__description {
+  margin-top: 1rem;
+}
+@media (min-width: 48em) {
+  .services__design__description,
+  .services__web-dev__description,
+  .services__cloud__description {
+    margin: 0;
+  }
+}
+.services__design__image,
+.services__web-dev__image,
+.services__cloud__image {
+  align-self: flex-end;
+  justify-self: center;
+}
+.services__design__image img,
+.services__web-dev__image img,
+.services__cloud__image img {
+  max-height: 20rem;
+}
+
+.services__design__content,
+.services__web-dev__content,
+.services__cloud__content {
+  display: grid;
+}
+@media (min-width: 48em) {
+  .services__design__content,
+  .services__web-dev__content,
+  .services__cloud__content {
+    grid-template-rows: 1fr 1fr 4fr;
+    gap: 0;
+  }
+}
+.services__design__content span,
+.services__web-dev__content span,
+.services__cloud__content span {
+  align-self: flex-end;
 }/*# sourceMappingURL=main.css.map */

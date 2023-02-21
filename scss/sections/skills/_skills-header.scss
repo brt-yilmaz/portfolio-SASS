@@ -3,6 +3,7 @@
 .skills__grid__header {
   display: grid;
   justify-items: center;
+  gap: 1rem;
 
   &__headline h3 {
     text-align: center;
@@ -19,8 +20,9 @@
     display: block;
     margin: 0 auto;
     background-color: $primary;
-}
-    &__headline div::after {
+  }
+  
+  &__headline div::after {
     content: "";
     width: 2rem;
     padding-top: 0.5rem;
@@ -29,7 +31,7 @@
     margin: 0 auto;
     margin-bottom: 1rem;
     background-color: $primary;
-}
+  }
 
   &__logos {
     display: flex;
@@ -39,6 +41,30 @@
 
     & > * {
       font-size: 2rem;
+    }
+
+    & .html {
+      color: rgb(67, 62, 62);
+    }
+
+    & .sass{
+      color: $primary;
+    }
+
+    & .js {
+      color: #0c2f48;
+    }
+
+    & .react {
+      color: #0f6db1;
+    }
+
+    & .node {
+      color: rgb(1, 73, 1);
+    }
+
+    & .mongo {
+      color: #1a8c48
     }
 
     & > *:hover {

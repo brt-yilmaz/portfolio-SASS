@@ -3,7 +3,22 @@
 .skills__grid {
   padding-top: 4vh;
   display: grid;
+  gap: 2rem;
   grid-template-columns: 1fr;
   width: 80%;
   margin: 0 auto;
+  text-align:justify;
+
+  & span,
+  & h2 {
+    background-clip: text;
+    background-image: linear-gradient(to right, $primary,#4a364c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  & span {
+    font-size: 2rem;
+  }
 }
+
