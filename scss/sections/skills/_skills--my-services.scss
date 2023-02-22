@@ -1,0 +1,75 @@
+@use '../../util/' as *;
+
+.skills__grid__my-services {
+  display: grid;
+  gap: 1rem;
+  @include breakpoint(medium) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__heading {
+    letter-spacing: .1rem;
+    font-weight: 600;
+
+    @include breakpoint(medium) {
+      grid-column: 1/-1;
+      justify-self: center;
+    }
+  }
+
+  &--left {
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    @include breakpoint(medium) {
+      border-right: 0.1rem solid lightgrey;
+      text-align: center;
+      padding: 0 2.2rem;
+      align-self: center;
+    }
+  }
+}
+
+.services__design,
+.services__web-dev,
+.services__cloud {
+  display: grid;
+  gap:1rem;
+
+  @include breakpoint(medium) {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  &__description {
+    margin-top: 1rem;
+    @include breakpoint(medium) {
+      margin: 0;
+    }
+  }
+
+  &__image {
+    align-self: flex-end;
+    justify-self: center;
+    
+    & img {
+      max-height: 20rem;
+    }
+  }
+}
+
+.services__design__content,
+.services__web-dev__content,
+.services__cloud__content {
+  display: grid;
+  @include breakpoint(medium) {
+    grid-template-rows: 1fr 1fr 4fr;
+    gap: 0;
+  }
+
+  & span {
+    align-self: flex-end;
+  }
+
+  
+}
