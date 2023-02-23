@@ -1,12 +1,15 @@
-@use '../../util/' as *;
+@use "../../util/" as *;
 
 .contact {
   margin: 2rem auto;
+  height: 80vh;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1.3rem;
   width: 80%;
   max-width: 30rem;
+
+  @include 
 
   & h1 {
     text-align: center;
@@ -16,23 +19,23 @@
   &__form {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.2rem;
- 
+    gap: 1.1rem;
+
     &__text {
       border: 0.1rem solid rgb(161, 161, 161);
       box-shadow: rgba(118, 25, 111, 0.24) 0px 5px 15px;
       border-radius: 5px;
-      font-size: .8rem;
+      font-size: 0.8rem;
       height: 2rem;
       outline: none;
 
       &:focus {
-      border: 0.1rem solid $primary;
+        border: 0.1rem solid $primary;
       }
     }
 
     &__btn {
-      padding: 0.4rem ;
+      padding: 0.4rem;
       border: 0.1rem solid $primary;
       border-radius: 25px;
       background-color: white;
@@ -43,11 +46,9 @@
         border: 0.1rem solid white;
       }
     }
-
   }
 
   & textarea {
     height: 5rem;
-  };
-
+  }
 }

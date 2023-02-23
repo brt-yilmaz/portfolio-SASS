@@ -1,4 +1,4 @@
-@use '../../util/' as *;
+@use "../../util/" as *;
 
 .skills__grid__header {
   display: grid;
@@ -16,12 +16,12 @@
   &__headline div::before {
     content: "";
     width: clamp(12rem, 5rem + 15vw, 40rem);
-    height: clamp(.1rem, .2vh, .5rem);
+    height: clamp(0.1rem, 0.2vh, 0.5rem);
     display: block;
     margin: 0 auto;
     background-color: $primary;
   }
-  
+
   &__headline div::after {
     content: "";
     width: 2rem;
@@ -47,7 +47,7 @@
       color: rgb(67, 62, 62);
     }
 
-    & .sass{
+    & .sass {
       color: $primary;
     }
 
@@ -64,7 +64,7 @@
     }
 
     & .mongo {
-      color: #1a8c48
+      color: #1a8c48;
     }
 
     & > *:hover {

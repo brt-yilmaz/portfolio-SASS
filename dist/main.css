@@ -310,7 +310,7 @@ html {
   .btn-rounded {
     display: block;
     padding: 0;
-    background-color: #BE2FE9;
+    background-color: #be2fe9;
   }
   .btn-rounded .phone-icon {
     right: -2rem;
@@ -367,7 +367,8 @@ html {
   }
 }
 
-.intro button.intro__contact, .services__design button.intro__contact {
+.intro button.intro__contact,
+.services__design button.intro__contact {
   justify-self: center;
   height: 3rem;
   width: 12rem;
@@ -379,16 +380,19 @@ html {
   line-height: 1rem;
 }
 @media (min-width: 48em) {
-  .intro button.intro__contact, .services__design button.intro__contact {
+  .intro button.intro__contact,
+  .services__design button.intro__contact {
     align-self: flex-start;
   }
 }
 @media (min-width: 64em) {
-  .intro button.intro__contact, .services__design button.intro__contact {
+  .intro button.intro__contact,
+  .services__design button.intro__contact {
     justify-self: flex-start;
   }
 }
-.intro button.intro__contact span, .services__design button.intro__contact span {
+.intro button.intro__contact span,
+.services__design button.intro__contact span {
   text-align: center;
 }
 
@@ -682,9 +686,10 @@ html {
 
 .contact {
   margin: 2rem auto;
+  height: 80vh;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1.3rem;
   width: 80%;
   max-width: 30rem;
 }
@@ -695,7 +700,7 @@ html {
 .contact__form {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.2rem;
+  gap: 1.1rem;
 }
 .contact__form__text {
   border: 0.1rem solid rgb(161, 161, 161);
@@ -724,7 +729,7 @@ html {
 }
 
 .footer {
-  height: 95%;
+  height: 90%;
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
   border-radius: 10px;
   padding: 2rem 2rem;
@@ -821,4 +826,16 @@ html {
 body {
   max-width: 1600px;
   margin: 0 auto;
+  opacity: 0;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=main.css.map */

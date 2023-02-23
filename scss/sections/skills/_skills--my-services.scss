@@ -1,4 +1,4 @@
-@use '../../util/' as *;
+@use "../../util/" as *;
 
 .skills__grid__my-services {
   display: grid;
@@ -8,7 +8,7 @@
   }
 
   &__heading {
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     font-weight: 600;
 
     @include breakpoint(medium) {
@@ -34,7 +34,7 @@
 .services__web-dev,
 .services__cloud {
   display: grid;
-  gap:1rem;
+  gap: 1rem;
 
   @include breakpoint(medium) {
     grid-template-columns: 1fr 1fr;
@@ -51,7 +51,7 @@
   &__image {
     align-self: flex-end;
     justify-self: center;
-    
+
     & img {
       max-height: 20rem;
     }
@@ -70,6 +70,4 @@
   & span {
     align-self: flex-end;
   }
-
-  
 }

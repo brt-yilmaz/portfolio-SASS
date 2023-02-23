@@ -1,8 +1,19 @@
-@use './util' as u ;
-@use './sections/' as s;
+@use "./util" as u;
+@use "./sections/" as s;
 
 body {
   max-width: 1600px;
   margin: 0 auto;
+  opacity: 0;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}

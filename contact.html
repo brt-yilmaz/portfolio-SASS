@@ -11,12 +11,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
-      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
 
     <link rel="stylesheet" href="/dist/main.css" />
     <title>Portfolio</title>
@@ -27,17 +35,24 @@
 /////////////////////////////////////////////////////////////////////////////////////////////-->
     <nav class="nav">
       <div class="nav__container">
-
         <div class="nav__logo">
-         <span>Berat</span>
+          <span>Berat</span>
         </div>
 
         <ul class="nav__items">
-          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="./skills.html">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./skills.html">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
           <li class="nav-item"><a class="nav-link" href="#">faq</a></li>
-          <li class="nav-item"><a class="nav-link" href="./contact.html">contact</a>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">contact</a>
+          </li>
         </ul>
 
         <button type="button" class="rounded-pill btn-rounded">
@@ -56,86 +71,84 @@
 
           <!-- nav -->
           <nav class="nav">
-            <ul class="list " id="hamburger__list">
-              <li class="item"> <a class="link" href="./index.html"> Home </a> </li>
-              <li class="item"> <a class="link"> TESTIMONIALS</a> </li>
-              <li class="item"> <a class="link"> FAQ </a> </li>
-              <li class="item"> <a class="link" href="./skills.html"> Skills </a> </li>
-              <li class="item"> <a class="link" href="./contact.html"> Contact </a> </li>
+            <ul class="list" id="hamburger__list">
+              <li class="item">
+                <a class="link" href="./index.html"> Home </a>
+              </li>
+              <li class="item"><a class="link"> TESTIMONIALS</a></li>
+              <li class="item"><a class="link"> FAQ </a></li>
+              <li class="item">
+                <a class="link" href="./skills.html"> Skills </a>
+              </li>
+              <li class="item">
+                <a class="link" href="./contact.html"> Contact </a>
+              </li>
             </ul>
-          </nav
+          </nav>
         </div>
-
       </div>
     </nav>
 
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////
+                               THE CONTACT SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////////-->
+
     <section class="contact">
       <h1>Contact Us</h1>
-      
+
       <form class="contact__form" action="#" method="post">
-       <input type="text" class="contact__form__text" placeholder="Your name">
-       <input type="email" class="contact__form__text" placeholder="Your email">
-       <input type="text" class="contact__form__text" placeholder="Your phone">
-       <textarea class="contact__form__text" placeholder="Your message"></textarea>
-       <input type="submit" class="contact__form__btn" value="Send">
+        <input
+          type="text"
+          class="contact__form__text"
+          placeholder="Your name"
+        />
+        <input
+          type="email"
+          class="contact__form__text"
+          placeholder="Your email"
+        />
+        <input
+          type="text"
+          class="contact__form__text"
+          placeholder="Your phone"
+        />
+        <textarea
+          class="contact__form__text"
+          placeholder="Your message"
+        ></textarea>
+        <input type="submit" class="contact__form__btn" value="Send" />
       </form>
-      
+
       <footer class="footer">
         <div class="footer__flex">
           <div class="footer__flex__phone">
-            <span class="material-symbols-outlined">
-              add_call
-            </span>
-            <span class="footer__flex__title">
-                +41634367044
-            </span>
-            <span class="footer__flex__sub--title">
-              Mon-Fri 8am-4pm
-            </span>
+            <span class="material-symbols-outlined"> add_call </span>
+            <span class="footer__flex__title"> +41634367044 </span>
+            <span class="footer__flex__sub--title"> Mon-Fri 8am-4pm </span>
           </div>
-        <div class="footer__flex__mail">
-          <span class="material-icons">
-            outgoing_mail
-          </span>
-          <span class="footer__flex__title">
-            brtylmz@gmail.com
-          </span>
-          <span class="footer__flex__sub--title">
-            Questions 
-          </span>
+          <div class="footer__flex__mail">
+            <span class="material-icons"> outgoing_mail </span>
+            <span class="footer__flex__title"> brtylmz@gmail.com </span>
+            <span class="footer__flex__sub--title"> Questions </span>
+          </div>
+          <div class="footer__flex__map">
+            <span class="material-icons"> map </span>
+            <span class="footer__flex__title"> Köln, De </span>
+            <span class="footer__flex__sub--title"> 51702 </span>
+          </div>
+          <div class="footer__connect-us">
+            <p>Connect with me on social media</p>
+            <div class="footer__social-media" id="footer__social-media">
+              <div><i class="fab fa-github"></i></div>
+              <div><i class="fab fa-reddit"></i></div>
+              <div><i class="fab fa-linkedin"></i></div>
+              <div><i class="fab fa-facebook"></i></div>
+              <div><i class="fab fa-twitter-square"></i></div>
+            </div>
+          </div>
         </div>
-        <div class="footer__flex__map">
-          <span class="material-icons">
-            map
-          </span>
-          <span class="footer__flex__title">
-            Köln, De
-          </span>
-          <span class="footer__flex__sub--title">
-            51702
-          </span>
-        </div>
-        <div class="footer__connect-us" >
-          <p>Connect with me on social media</p> 
-          <div class="footer__social-media" id="footer__social-media">
-            <div> <i class="fab fa-github"></i></div>
-            <div><i class="fab fa-reddit"></i></div>
-            <div><i class="fab fa-linkedin"></i></div>
-            <div><i class="fab fa-facebook"></i></div>
-            <div><i class="fab fa-twitter-square"></i></div>
-
-        </div>
-        </div>
-        
-      </div>
-      <p class="copyright">
-        &copy; Copyright 2023 Berat Yilmaz
-      </p>
-
+        <p class="copyright">&copy; Copyright 2023 Berat Yilmaz</p>
       </footer>
-
-
     </section>
-
   </body>
 </html>

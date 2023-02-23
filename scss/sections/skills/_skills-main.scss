@@ -1,4 +1,4 @@
-@use '../../util/' as * ;
+@use "../../util/" as *;
 
 .skills__grid {
   padding-top: 4vh;
@@ -7,12 +7,12 @@
   grid-template-columns: 1fr;
   width: 80%;
   margin: 0 auto;
-  text-align:justify;
+  text-align: justify;
 
   & span,
   & h2 {
     background-clip: text;
-    background-image: linear-gradient(to right, $primary,#4a364c);
+    background-image: linear-gradient(to right, $primary, #4a364c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -21,4 +21,3 @@
     font-size: 2rem;
   }
 }
-

@@ -1,19 +1,19 @@
-@use '../../util/' as *;
+@use "../../util/" as *;
 
 .nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: clamp(4rem, 9vh , 6rem);
+  height: clamp(4rem, 9vh, 6rem);
   color: white;
   @include gradient;
-  
+
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    height: 6vh;   
+    height: 6vh;
   }
 
   &__items {
@@ -30,9 +30,8 @@
     &__items {
       height: 100%;
       display: flex;
-      gap:1rem;
+      gap: 1rem;
       align-items: center;
     }
-
   }
 }
