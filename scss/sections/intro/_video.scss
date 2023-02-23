@@ -4,13 +4,18 @@
   position: relative;
   display: flex;
   justify-content: center;
-
+  
   @include breakpoint(medium) {
     grid-column: 2/-1;
   }
-
+  
   & img {
     width: 80%;
+    max-width: 500px;
+
+    @include break-between(small,medium) {
+      max-width: 300px;
+    }
 
     @include breakpoint(medium) {
       width: 90%;

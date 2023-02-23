@@ -30,11 +30,11 @@
         </div>
 
         <ul class="nav__items">
-          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./skills.html">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
           <li class="nav-item"><a class="nav-link" href="#">faq</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">contact</a>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">contact</a>
         </ul>
 
         <button type="button" class="rounded-pill btn-rounded">
@@ -45,7 +45,22 @@
         </button>
 
         <div class="nav__hamburger-menu">
-          <i class="fas fa-bars"></i>
+          <input type="checkbox" id="navi-toggle" class="checkbox" />
+          <label for="navi-toggle" class="button">
+            <span class="icon" id="line-icon">&nbsp;</span>
+          </label>
+          <div class="background">&nbsp;</div>
+
+          <!-- nav -->
+          <nav class="nav">
+            <ul class="list " id="hamburger__list">
+              <li class="item"> <a class="link" href="./index.html"> Home </a> </li>
+              <li class="item"> <a class="link"> TESTIMONIALS</a> </li>
+              <li class="item"> <a class="link"> FAQ </a> </li>
+              <li class="item"> <a class="link" href="./skills.html"> Skills </a> </li>
+              <li class="item"> <a class="link" href="./contact.html"> Contact </a> </li>
+            </ul>
+          </nav
         </div>
 
       </div>

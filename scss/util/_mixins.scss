@@ -5,9 +5,11 @@
 /************Media Query Start************/
 
 $breakpoints-up: (
+'small':  em(400),
 'medium': em(768),
 'large' : em(1024),
 'xlarge': em(1440),
+'xxlarge': em(1750)
 );
 
 //must be different to prevent overlap

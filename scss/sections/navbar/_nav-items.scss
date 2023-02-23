@@ -3,6 +3,8 @@
 .nav__items {
   display: none;
   list-style: none;
+  margin-left: auto;
+  margin-right: 2rem;
 
   & a {
     text-decoration: none;
@@ -17,5 +19,6 @@
       display: flex;
       gap: .3rem;
       align-items: center;
+      font-size: clamp(1rem, 1rem + .1vw , 1.2rem);
   }
 }

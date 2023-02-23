@@ -16,7 +16,7 @@
 
   &__grid {
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 8rem 14rem 5rem;
@@ -31,7 +31,12 @@
     }
 
     @include breakpoint(large) {
+      margin: 5vh auto;
       grid-template-rows: 5rem 10rem 5rem;
+    }
+
+    @include breakpoint(xxlarge) {
+      margin: 10vh auto;
     }
 
   }

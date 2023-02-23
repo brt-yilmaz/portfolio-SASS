@@ -1,4 +1,8 @@
 @use './util' as u ;
 @use './sections/' as s;
 
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+}
 
