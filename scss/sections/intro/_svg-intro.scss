@@ -1,6 +1,5 @@
 @use "../../util/" as *;
 
 .intro svg {
-  position: absolute;
-  bottom: 0;
+  vertical-align: middle;
 }
